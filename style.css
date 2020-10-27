@@ -58,7 +58,7 @@ main p{
 
 .container{
     width: 800px;
-    height: 360px;
+    height: 350px;
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -76,6 +76,7 @@ main p{
 .prev i, .next i {
     margin: auto;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .painting{
@@ -92,4 +93,24 @@ main p{
 
 .painting img.active {
     display: block;
+}
+
+.bullets {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bullets span{
+    border: 1px solid black;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.bullets span.active{
+    background-color: black;
 }

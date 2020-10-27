@@ -30,4 +30,20 @@ $(document).ready(function() {
         }
     });
 
+    // Click per andare avanti e indietro con il bullets
+    $('.bullets span').click(function() {
+        // creo una varibile per salvare lo span corrente
+        var icona_corrente = $('span.active');
+
+        icona_corrente.removeClass('active');
+
+        // verifico se esiste uno span
+        if(icona_corrente.next('span').length) {
+            icona_corrente.next('span').addClass('active');
+        } else {
+            $('.bullets :first-child').addClass('active');
+        }
+    });
+
+
 });
