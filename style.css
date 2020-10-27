@@ -7,3 +7,89 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
 }
+
+.wrapper{
+    height: 100vh;
+    background-color: #FBAE17;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER -------------------------------------------------- */
+
+header {
+    padding: 0 10px;
+    width: 100%;
+    height: 100px;
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FBAE17;
+}
+
+header img {
+    height: 80px;
+}
+
+
+/* MAIN ---------------------------------------------------- */
+main{
+    /* background-color: red; */
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1{
+    color: black;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+main p{
+    color: black;
+    font-size: 20px;
+    margin: 20px 80px;
+    text-align: center;
+}
+
+.container{
+    width: 800px;
+    height: 360px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev, .next {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev i, .next i {
+    margin: auto;
+    font-size: 20px;
+}
+
+.painting{
+    width: 90%;
+    height: 100%;
+}
+
+.painting img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.painting img.active {
+    display: block;
+}
